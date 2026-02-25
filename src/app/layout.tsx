@@ -3,16 +3,6 @@ import {Poppins } from "next/font/google";
 // import "../../app/globals.css";
 import "./globals.css";
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
 const poppins = Poppins({
   weight: ["400", "700"],
   subsets: ["latin"],
