@@ -1,6 +1,7 @@
 "use client";
 import { NAV_ITEMS } from "@/features/contants/head.intdex";
 import { useState, useEffect, useRef } from "react";
+import Image  from "next/image";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,11 +43,7 @@ export default function Header() {
         <div className="ck-navbar">
           {/* Logo */}
           <a href="#" className="ck-logo">
-            <svg className="ck-logo-icon" viewBox="0 0 40 40" fill="none">
-              <rect x="4" y="20" width="14" height="14" rx="2" fill="#0d1b2a" opacity="0.7"/>
-              <rect x="22" y="20" width="14" height="14" rx="2" fill="#0d1b2a" opacity="0.9"/>
-              <polygon points="20,4 36,14 4,14" fill="#0d1b2a"/>
-            </svg>
+            <Image src="/logo.png" height={50} width={50} alt="Logo"/>
             <div className="ck-logo-text">
               <span className="ck-logo-name">Carrick Group</span>
               <span className="ck-logo-tagline">Bâtir · Conseiller · Distribuer</span>

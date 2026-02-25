@@ -1,4 +1,5 @@
 import { NAV_ITEMS } from "@/features/contants/head.intdex";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -13,7 +14,8 @@ export default function Footer() {
           {/* Logo */}
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-2">
-              <div
+              <Image src="/A/logo.png" height={50} width={50} alt="Logo"/>
+              {/* <div
                 className="w-8 h-8 rounded-lg shrink-0"
                 style={{ background: "linear-gradient(135deg, #6366f1, #06b6d4)" }}
               />
@@ -22,7 +24,7 @@ export default function Footer() {
                 style={{ fontFamily: "Georgia, serif", letterSpacing: "-0.02em" }}
               >
                 Carrick
-              </span>
+              </span> */}
             </div>
             <p className="text-sm text-white/60 leading-relaxed">
               Groupe multisectoriel engagé dans la construction, le conseil,
