@@ -17,7 +17,7 @@ const services = [
     ],
     cta: "Demander un devis construction",
     image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
-    accent: "#C8A96E",
+    accent: "#f0c040",
   },
   {
     number: "02",
@@ -118,20 +118,28 @@ export default function CarrickServices() {
           }}
         >
           <div className="flex items-center gap-4 mb-4">
-            <div className="h-px w-12" style={{ background: "#C8A96E" }} />
+            <div className="h-px w-12 bg-secondary" 
+              // style={{ background: "#C8A96E" }} 
+            />
             <span
-              className="text-xs font-bold tracking-[0.3em] uppercase"
-              style={{ color: "#C8A96E", fontFamily: "'Courier New', monospace" }}
+              className="text-xs font-bold text-secondary tracking-[0.3em] uppercase"
+              style={{ 
+                // color: "#C8A96E", 
+                fontFamily: "'Courier New', monospace" }}
             >
               Ce que nous faisons pour vous
             </span>
           </div>
           <h2
             className="text-5xl md:text-6xl font-black"
-            style={{ fontFamily: "'Georgia', serif", color: "#111", lineHeight: 1.05 }}
+            style={{ fontFamily: "'Georgia', serif", 
+              color: "#111", 
+              lineHeight: 1.05 }}
           >
             Nos{" "}
-            <span style={{ color: "#C8A96E" }}>Services</span>
+            <span className="text-secondary"
+              // style={{ color: "#C8A96E" }}
+            >Services</span>
           </h2>
           <p className="mt-4 text-lg max-w-xl" style={{ color: "#555", fontFamily: "Garamond, Georgia, serif" }}>
             Chaque service est pensé pour répondre à un besoin précis. Dites-nous où vous en êtes, nous vous proposons la solution.

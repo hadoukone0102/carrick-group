@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useEffect, useState } from "react";
+import Image from "next/image";
 
 const companies = [
   {
@@ -11,7 +12,8 @@ const companies = [
       "Construction de bâtiments résidentiels, commerciaux et institutionnels, rénovation, terrassement et aménagement paysager.",
     services: ["Bâtiments clés en main", "Rénovation & réhabilitation", "Terrassement", "Relevés topographiques"],
     icon: "🏗️",
-    color: "#C8A96E",
+    img:"/carrick/c-construction-img.jpg",
+    color: "#f0c040",
     bg: "from-stone-900 to-stone-800",
   },
   {
@@ -22,6 +24,7 @@ const companies = [
       "Menuiserie aluminium moderne et design : fenêtres, portes, balcons vitrés, stores électriques et escaliers vitrés.",
     services: ["Fenêtres françaises & coulissantes", "Portes coulissantes", "Balcons vitrés inox", "Stores électriques"],
     icon: "🪟",
+    img:"/carrick/c-alu-img.jpg",
     color: "#7EB8D4",
     bg: "from-slate-900 to-slate-800",
   },
@@ -44,6 +47,7 @@ const companies = [
       "Cabinet de conseil stratégique : montage de projets, investissement, marchés financiers, crowdfunding immobilier & SCPI.",
     services: ["Montage de projets", "Consulting stratégique", "Marchés financiers", "Crowdfunding & SCPI"],
     icon: "📊",
+    img:"/carrick/c-conseil-img.jpg",
     color: "#B87ED4",
     bg: "from-purple-950 to-purple-900",
   },
@@ -103,10 +107,14 @@ export default function CarrickCompanies() {
           }}
         >
           <div className="flex items-center gap-4 mb-4">
-            <div className="h-px flex-1 max-w-12" style={{ background: "#C8A96E" }} />
+            <div className="h-px flex-1 max-w-12 bg-secondary" 
+                // style={{ background: "#C8A96E" }} 
+            />
             <span
-              className="text-xs font-bold tracking-[0.3em] uppercase"
-              style={{ color: "#C8A96E", fontFamily: "'Courier New', monospace" }}
+              className="text-xs text-secondary font-bold tracking-[0.3em] uppercase"
+              style={{ 
+                // color: "#C8A96E", 
+                fontFamily: "'Courier New', monospace" }}
             >
               Groupe Multisectoriel
             </span>
@@ -117,7 +125,9 @@ export default function CarrickCompanies() {
           >
             Nos
             <br />
-            <span style={{ color: "#C8A96E" }}>Entreprises</span>
+            <span  className="text-secondary"
+                // style={{ color: "#C8A96E" }}
+            >Entreprises</span>
           </h2>
         </div>
 
@@ -138,12 +148,12 @@ export default function CarrickCompanies() {
                 }}
               >
                 <span
-                  className="text-2xl w-10 h-10 flex items-center justify-center rounded-lg flex-shrink-0"
+                  className="text-2xl w-10 h-10 flex items-center justify-center rounded-lg shrink-0"
                   style={{
                     background: active === i ? `${c.color}22` : "rgba(255,255,255,0.05)",
                   }}
                 >
-                  {c.icon}
+                  {c.img ? (<Image src={c.img} width={20} height={20} alt={c.name}  />) :  c.icon}
                 </span>
                 <div>
                   <p
@@ -163,7 +173,7 @@ export default function CarrickCompanies() {
                   </p>
                 </div>
                 <div
-                  className="ml-auto w-1.5 h-8 rounded-full flex-shrink-0 transition-all duration-300"
+                  className="ml-auto w-1.5 h-8 rounded-full shrink-0 transition-all duration-300"
                   style={{ background: active === i ? c.color : "transparent" }}
                 />
               </button>
@@ -205,7 +215,8 @@ export default function CarrickCompanies() {
                     className="text-4xl w-16 h-16 flex items-center justify-center rounded-2xl flex-shrink-0"
                     style={{ background: `${company.color}18`, border: `1px solid ${company.color}33` }}
                   >
-                    {company.icon}
+                    {company.img ? (<Image src={company.img} width={20} height={20} alt={company.name}  />) :  company.icon}
+                    {/* {company.icon} */}
                   </span>
                   <div>
                     <h3

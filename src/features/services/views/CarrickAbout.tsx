@@ -71,14 +71,14 @@ export default function CarrickAbout() {
             >
               À Propos de{" "}
               <br />
-              <span style={{ color: "#C8A96E" }}>CARRICK GROUP</span>
+              <span style={{ color: "#C8A96E" }}>CARRICK GROUPE</span>
             </h2>
 
             <p
               className="text-lg leading-relaxed mb-6"
               style={{ color: "rgba(255,255,255,0.65)", fontFamily: "Garamond, Georgia, serif" }}
             >
-              CARRICK GROUP est un groupe multisectoriel structuré autour de cinq pôles d&apos;expertise complémentaires : construction, aluminium, distribution, conseil stratégique et accompagnement juridique.
+              CARRICK GROUPE est un groupe multisectoriel structuré autour de cinq pôles d&apos;expertise complémentaires : construction, aluminium, distribution, conseil stratégique et accompagnement juridique.
             </p>
             <p
               className="text-base leading-relaxed mb-10"

@@ -1,7 +1,7 @@
 export const SLIDES = [
   {
     img: "/A/img1.jpg",
-    tag: "Carrick Group",
+    tag: "Carrick Groupe",
     title: "Spécialisée dans la commercialisation",
     highlight: "des produits & services industriels",
     description:
