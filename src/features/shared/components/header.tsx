@@ -45,7 +45,7 @@ export default function Header() {
           <a href="#" className="ck-logo">
             <Image src="/logo.png" height={50} width={50} alt="Logo"/>
             <div className="ck-logo-text">
-              <span className="ck-logo-name">Carrick Groupe</span>
+              <span className="ck-logo-name">Carrick Group</span>
               <span className="ck-logo-tagline">Bâtir · Conseiller · Distribuer</span>
             </div>
           </a>
