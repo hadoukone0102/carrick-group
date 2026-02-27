@@ -6,8 +6,8 @@ export function CarrickStyle () {
         :root {
           --navy: #0d1b2a;
           --navy-light: #162233;
-          --gold: #f0c040;
-          --gold-dark: #d4a820;
+          --gold: #68277f;
+          --gold-dark: #68277f;
           --white: #f5f5f0;
           --muted: #8fa3b8;
           --border: rgba(240,192,64,0.15);

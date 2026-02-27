@@ -68,10 +68,10 @@ export default function CarrickContact() {
             }}
           >
             <div className="flex items-center gap-4 mb-4">
-              <div className="h-px w-12" style={{ background: "#C8A96E" }} />
+              <div className="h-px w-12" style={{ background: "#68277f" }} />
               <span
                 className="text-xs font-bold tracking-[0.3em] uppercase"
-                style={{ color: "#C8A96E", fontFamily: "'Courier New', monospace" }}
+                style={{ color: "#68277f", fontFamily: "'Courier New', monospace" }}
               >
                 Passons à l&apos;action
               </span>
@@ -83,7 +83,7 @@ export default function CarrickContact() {
             >
               Vous avez un
               <br />
-              <span style={{ color: "#C8A96E" }}>projet ?</span>
+              <span style={{ color: "#68277f" }}>projet ?</span>
             </h2>
 
             <p
@@ -274,7 +274,7 @@ export default function CarrickContact() {
                     onClick={handleSubmit}
                     className="w-full py-4 rounded-xl font-bold text-sm transition-all duration-200 hover:opacity-90 hover:scale-[1.01]"
                     style={{
-                      background: "linear-gradient(135deg, #C8A96E, #d4b87e)",
+                      background: "linear-gradient(135deg, #68277f, #d4b87e)",
                       color: "#0a0a0a",
                       fontFamily: "'Courier New', monospace",
                       letterSpacing: "0.1em",

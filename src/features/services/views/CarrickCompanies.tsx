@@ -13,7 +13,7 @@ const companies = [
     services: ["Bâtiments clés en main", "Rénovation & réhabilitation", "Terrassement", "Relevés topographiques"],
     icon: "🏗️",
     img:"/carrick/c-construction-img.jpg",
-    color: "#f0c040",
+    color: "#68277f",
     bg: "from-stone-900 to-stone-800",
   },
   {
@@ -108,12 +108,12 @@ export default function CarrickCompanies() {
         >
           <div className="flex items-center gap-4 mb-4">
             <div className="h-px flex-1 max-w-12 bg-secondary" 
-                // style={{ background: "#C8A96E" }} 
+                // style={{ background: "#68277f" }} 
             />
             <span
               className="text-xs text-secondary font-bold tracking-[0.3em] uppercase"
               style={{ 
-                // color: "#C8A96E", 
+                // color: "#68277f", 
                 fontFamily: "'Courier New', monospace" }}
             >
               Groupe Multisectoriel
@@ -126,7 +126,7 @@ export default function CarrickCompanies() {
             Nos
             <br />
             <span  className="text-secondary"
-                // style={{ color: "#C8A96E" }}
+                // style={{ color: "#68277f" }}
             >Entreprises</span>
           </h2>
         </div>
@@ -212,7 +212,7 @@ export default function CarrickCompanies() {
               <div className="relative z-10">
                 <div className="flex items-start gap-4 mb-6">
                   <span
-                    className="text-4xl w-16 h-16 flex items-center justify-center rounded-2xl flex-shrink-0"
+                    className="text-4xl w-16 h-16 flex items-center justify-center rounded-2xl shrink-0"
                     style={{ background: `${company.color}18`, border: `1px solid ${company.color}33` }}
                   >
                     {company.img ? (<Image src={company.img} width={20} height={20} alt={company.name}  />) :  company.icon}
@@ -253,7 +253,7 @@ export default function CarrickCompanies() {
                         style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.06)" }}
                       >
                         <div
-                          className="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                          className="w-1.5 h-1.5 rounded-full shrink-0"
                           style={{ background: company.color }}
                         />
                         <span className="text-sm" style={{ color: "rgba(255,255,255,0.75)" }}>

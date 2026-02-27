@@ -11,7 +11,7 @@ const projects = [
     desc: "Construction d'un immeuble R+4 de 24 appartements, avec parking souterrain et espace paysager.",
     image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80",
     tags: ["Résidentiel", "Clés en main", "Terrassement"],
-    accent: "#C8A96E",
+    accent: "#68277f",
   },
   {
     id: "02",
@@ -47,7 +47,7 @@ const projects = [
 
 const statusColors: Record<string, string> = {
   "Livré": "#7EC88A",
-  "En cours": "#C8A96E",
+  "En cours": "#68277f",
 };
 
 export default function CarrickProjects() {
@@ -82,10 +82,10 @@ export default function CarrickProjects() {
         >
           <div>
             <div className="flex items-center gap-4 mb-4">
-              <div className="h-px w-12" style={{ background: "#C8A96E" }} />
+              <div className="h-px w-12" style={{ background: "#68277f" }} />
               <span
                 className="text-xs font-bold tracking-[0.3em] uppercase"
-                style={{ color: "#C8A96E", fontFamily: "'Courier New', monospace" }}
+                style={{ color: "#68277f", fontFamily: "'Courier New', monospace" }}
               >
                 Ce que nous avons bâti
               </span>
@@ -95,7 +95,7 @@ export default function CarrickProjects() {
               style={{ fontFamily: "'Georgia', serif", color: "#111", lineHeight: 1.05 }}
             >
               Projets &<br />
-              <span style={{ color: "#C8A96E" }}>Réalisations</span>
+              <span style={{ color: "#68277f" }}>Réalisations</span>
             </h2>
           </div>
           <p
@@ -211,7 +211,7 @@ export default function CarrickProjects() {
             className="px-8 py-4 rounded-2xl font-bold text-sm transition-all duration-200 hover:scale-105"
             style={{
               background: "#111",
-              color: "#C8A96E",
+              color: "#68277f",
               border: "1px solid rgba(200,169,110,0.3)",
               fontFamily: "'Courier New', monospace",
               letterSpacing: "0.05em",

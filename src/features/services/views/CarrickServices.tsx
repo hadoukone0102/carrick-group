@@ -17,7 +17,7 @@ const services = [
     ],
     cta: "Demander un devis construction",
     image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
-    accent: "#f0c040",
+    accent: "#68277f",
   },
   {
     number: "02",
@@ -119,12 +119,12 @@ export default function CarrickServices() {
         >
           <div className="flex items-center gap-4 mb-4">
             <div className="h-px w-12 bg-secondary" 
-              // style={{ background: "#C8A96E" }} 
+              // style={{ background: "#68277f" }} 
             />
             <span
               className="text-xs font-bold text-secondary tracking-[0.3em] uppercase"
               style={{ 
-                // color: "#C8A96E", 
+                // color: "#68277f", 
                 fontFamily: "'Courier New', monospace" }}
             >
               Ce que nous faisons pour vous
@@ -138,7 +138,7 @@ export default function CarrickServices() {
           >
             Nos{" "}
             <span className="text-secondary"
-              // style={{ color: "#C8A96E" }}
+              // style={{ color: "#68277f" }}
             >Services</span>
           </h2>
           <p className="mt-4 text-lg max-w-xl" style={{ color: "#555", fontFamily: "Garamond, Georgia, serif" }}>

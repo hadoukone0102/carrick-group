@@ -48,10 +48,10 @@ export default function CarrickPartners() {
           }}
         >
           <div className="flex items-center gap-4 mb-4">
-            <div className="h-px w-12" style={{ background: "#C8A96E" }} />
+            <div className="h-px w-12" style={{ background: "#68277f" }} />
             <span
               className="text-xs font-bold tracking-[0.3em] uppercase"
-              style={{ color: "#C8A96E", fontFamily: "'Courier New', monospace" }}
+              style={{ color: "#68277f", fontFamily: "'Courier New', monospace" }}
             >
               Notre promesse
             </span>
@@ -60,7 +60,7 @@ export default function CarrickPartners() {
             className="text-5xl md:text-6xl font-black text-white mb-12"
             style={{ fontFamily: "'Georgia', serif", lineHeight: 1.05 }}
           >
-            Nos <span style={{ color: "#C8A96E" }}>Engagements</span>
+            Nos <span style={{ color: "#68277f" }}>Engagements</span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -88,7 +88,7 @@ export default function CarrickPartners() {
                 </p>
                 <div
                   className="mt-6 h-0.5 w-12 rounded-full"
-                  style={{ background: "#C8A96E" }}
+                  style={{ background: "#68277f" }}
                 />
               </div>
             ))}
@@ -104,10 +104,10 @@ export default function CarrickPartners() {
           }}
         >
           <div className="flex items-center gap-4 mb-4">
-            <div className="h-px w-12" style={{ background: "#C8A96E" }} />
+            <div className="h-px w-12" style={{ background: "#68277f" }} />
             <span
               className="text-xs font-bold tracking-[0.3em] uppercase"
-              style={{ color: "#C8A96E", fontFamily: "'Courier New', monospace" }}
+              style={{ color: "#68277f", fontFamily: "'Courier New', monospace" }}
             >
               Ils nous font confiance
             </span>
@@ -116,7 +116,7 @@ export default function CarrickPartners() {
             className="text-5xl md:text-6xl font-black text-white mb-12"
             style={{ fontFamily: "'Georgia', serif", lineHeight: 1.05 }}
           >
-            Nos <span style={{ color: "#C8A96E" }}>Partenaires</span>
+            Nos <span style={{ color: "#68277f" }}>Partenaires</span>
           </h2>
 
           <p
@@ -146,7 +146,7 @@ export default function CarrickPartners() {
                   style={{
                     background: "rgba(200,169,110,0.12)",
                     border: "1px solid rgba(200,169,110,0.25)",
-                    color: "#C8A96E",
+                    color: "#68277f",
                     fontFamily: "'Courier New', monospace",
                   }}
                 >
