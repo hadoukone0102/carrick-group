@@ -9,26 +9,31 @@ import CarrickProjects from "@/features/services/views/CarrickProjects";
 export default function HomePage() {
   return (
     <div>
-      {/* 1. Hero Banner */}
       <Banner />
 
-      {/* 2. Nos Entreprises — les 5 filiales du groupe */}
-      <CarrickCompanies />
+      <section id="societes">
+        <CarrickCompanies />
+      </section>
 
-      {/* 3. Nos Services — reformulés orientés client */}
-      <CarrickServices />
+      <section id="services">
+        <CarrickServices />
+      </section>
 
-      {/* 4. À Propos — vision, mission, valeurs */}
-      <CarrickAbout />
+      <section id="a-propos">
+        <CarrickAbout />
+      </section>
 
-      {/* 5. Projets & Réalisations */}
-      <CarrickProjects />
+      <section id="projets">
+        <CarrickProjects />
+      </section>
 
-      {/* 6. Engagements + Partenaires */}
-      <CarrickPartners />
+      <section id="partenaires">
+        <CarrickPartners />
+      </section>
 
-      {/* 7. Formulaire de devis / Contact */}
-      <CarrickContact />
+      <section id="contact">
+        <CarrickContact />
+      </section>
     </div>
   );
 }

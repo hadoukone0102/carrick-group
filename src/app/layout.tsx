@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.variable} ${poppins.style} ${poppins.className}`}>
+    <html lang="en" className={`${poppins.variable} ${poppins.style} ${poppins.className}`} style={{scrollBehavior: "smooth"}}>
       <body
         className={`${poppins.variable} ${poppins.style} ${poppins.className} antialiased font-light text-[16px]`}
       >
