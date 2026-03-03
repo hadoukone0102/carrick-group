@@ -111,17 +111,13 @@ export default function CarrickCompanies() {
                 // style={{ background: "#68277f" }} 
             />
             <span
-              className="text-xs text-secondary font-bold tracking-[0.3em] uppercase"
-              style={{ 
-                // color: "#68277f", 
-                fontFamily: "'Courier New', monospace" }}
-            >
+              className="text-xs text-secondary font-bold tracking-[0.3em] uppercase">
               Groupe Multisectoriel
             </span>
           </div>
           <h2
             className="text-5xl md:text-6xl font-black text-white"
-            style={{ fontFamily: "'Georgia', serif", lineHeight: 1.05 }}
+            style={{lineHeight: 1.05 }}
           >
             Nos
             <br />
@@ -160,14 +156,13 @@ export default function CarrickCompanies() {
                     className="font-bold text-sm"
                     style={{
                       color: active === i ? c.color : "rgba(255,255,255,0.7)",
-                      fontFamily: "'Georgia', serif",
                     }}
                   >
                     {c.name}
                   </p>
                   <p
                     className="text-xs mt-0.5"
-                    style={{ color: "rgba(255,255,255,0.35)", fontFamily: "'Courier New', monospace" }}
+                    style={{ color: "rgba(255,255,255,0.35)", }}
                   >
                     {c.id}
                   </p>
@@ -203,7 +198,6 @@ export default function CarrickCompanies() {
                   fontSize: "120px",
                   lineHeight: 1,
                   color: `${company.color}08`,
-                  fontFamily: "'Georgia', serif",
                 }}
               >
                 {company.id}
@@ -221,11 +215,10 @@ export default function CarrickCompanies() {
                   <div>
                     <h3
                       className="text-2xl md:text-3xl font-black text-white"
-                      style={{ fontFamily: "'Georgia', serif" }}
                     >
                       {company.name}
                     </h3>
-                    <p className="mt-1 text-sm" style={{ color: company.color, fontFamily: "'Courier New', monospace" }}>
+                    <p className="mt-1 text-sm" style={{ color: company.color,}}>
                       {company.tagline}
                     </p>
                   </div>
@@ -241,7 +234,7 @@ export default function CarrickCompanies() {
                 <div>
                   <p
                     className="text-xs font-bold tracking-widest uppercase mb-4"
-                    style={{ color: "rgba(255,255,255,0.3)", fontFamily: "'Courier New', monospace" }}
+                    style={{ color: "rgba(255,255,255,0.3)" }}
                   >
                     Prestations clés
                   </p>
@@ -266,13 +259,7 @@ export default function CarrickCompanies() {
 
                 <div className="mt-8 flex gap-3">
                   <button
-                    className="px-6 py-3 rounded-xl text-sm font-bold transition-all duration-200 hover:scale-105"
-                    style={{
-                      background: company.color,
-                      color: "#0a0a0a",
-                      fontFamily: "'Courier New', monospace",
-                      letterSpacing: "0.05em",
-                    }}
+                    className="px-6 py-3 rounded-xl text-secondary cursor-pointer border border-secondary text-sm font-bold transition-all duration-200 hover:scale-105"
                   >
                     En savoir plus →
                   </button>
@@ -280,9 +267,8 @@ export default function CarrickCompanies() {
                     className="px-6 py-3 rounded-xl text-sm font-bold transition-all duration-200 hover:opacity-80"
                     style={{
                       background: "transparent",
-                      border: `1px solid ${company.color}66`,
+                      border: `2px solid ${company.color}66`,
                       color: company.color,
-                      fontFamily: "'Courier New', monospace",
                       letterSpacing: "0.05em",
                     }}
                   >

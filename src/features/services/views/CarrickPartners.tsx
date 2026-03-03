@@ -51,14 +51,14 @@ export default function CarrickPartners() {
             <div className="h-px w-12" style={{ background: "#68277f" }} />
             <span
               className="text-xs font-bold tracking-[0.3em] uppercase"
-              style={{ color: "#68277f", fontFamily: "'Courier New', monospace" }}
+              style={{ color: "#68277f", }}
             >
               Notre promesse
             </span>
           </div>
           <h2
             className="text-5xl md:text-6xl font-black text-white mb-12"
-            style={{ fontFamily: "'Georgia', serif", lineHeight: 1.05 }}
+            style={{ lineHeight: 1.05 }}
           >
             Nos <span style={{ color: "#68277f" }}>Engagements</span>
           </h2>
@@ -79,7 +79,6 @@ export default function CarrickPartners() {
                 <span className="text-4xl block mb-4">{c.icon}</span>
                 <h3
                   className="text-xl font-black text-white mb-3"
-                  style={{ fontFamily: "'Georgia', serif" }}
                 >
                   {c.title}
                 </h3>
@@ -107,21 +106,21 @@ export default function CarrickPartners() {
             <div className="h-px w-12" style={{ background: "#68277f" }} />
             <span
               className="text-xs font-bold tracking-[0.3em] uppercase"
-              style={{ color: "#68277f", fontFamily: "'Courier New', monospace" }}
+              style={{ color: "#68277f" }}
             >
               Ils nous font confiance
             </span>
           </div>
           <h2
             className="text-5xl md:text-6xl font-black text-white mb-12"
-            style={{ fontFamily: "'Georgia', serif", lineHeight: 1.05 }}
+            style={{ lineHeight: 1.05 }}
           >
             Nos <span style={{ color: "#68277f" }}>Partenaires</span>
           </h2>
 
           <p
             className="mb-10 max-w-xl text-base"
-            style={{ color: "rgba(255,255,255,0.5)", fontFamily: "Garamond, Georgia, serif" }}
+            style={{ color: "rgba(255,255,255,0.5)",  }}
           >
             Nous collaborons avec des partenaires techniques, financiers et institutionnels reconnus afin de garantir la réussite et la durabilité de chaque projet.
           </p>
@@ -147,12 +146,11 @@ export default function CarrickPartners() {
                     background: "rgba(200,169,110,0.12)",
                     border: "1px solid rgba(200,169,110,0.25)",
                     color: "#68277f",
-                    fontFamily: "'Courier New', monospace",
                   }}
                 >
                   {p.name.charAt(0)}
                 </div>
-                <p className="text-xs font-bold text-white/60 leading-tight" style={{ fontFamily: "'Courier New', monospace" }}>
+                <p className="text-xs font-bold text-white/60 leading-tight">
                   {p.type}
                 </p>
               </div>

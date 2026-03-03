@@ -59,7 +59,7 @@ export default function CarrickAbout() {
               <div className="h-px w-12" style={{ background: "#68277f" }} />
               <span
                 className="text-xs font-bold tracking-[0.3em] uppercase"
-                style={{ color: "#68277f", fontFamily: "'Courier New', monospace" }}
+                style={{ color: "#68277f", }}
               >
                 Qui sommes-nous
               </span>
@@ -67,7 +67,7 @@ export default function CarrickAbout() {
 
             <h2
               className="text-5xl md:text-6xl font-black text-white mb-6"
-              style={{ fontFamily: "'Georgia', serif", lineHeight: 1.05 }}
+              style={{  lineHeight: 1.05 }}
             >
               À Propos de{" "}
               <br />
@@ -76,13 +76,13 @@ export default function CarrickAbout() {
 
             <p
               className="text-lg leading-relaxed mb-6"
-              style={{ color: "rgba(255,255,255,0.65)", fontFamily: "Garamond, Georgia, serif" }}
+              style={{ color: "rgba(255,255,255,0.65)" }}
             >
               CARRICK GROUP est un groupe multisectoriel structuré autour de cinq pôles d&apos;expertise complémentaires : construction, aluminium, distribution, conseil stratégique et accompagnement juridique.
             </p>
             <p
               className="text-base leading-relaxed mb-10"
-              style={{ color: "rgba(255,255,255,0.45)", fontFamily: "Garamond, Georgia, serif" }}
+              style={{ color: "rgba(255,255,255,0.45)", }}
             >
               Notre force repose sur une approche intégrée des projets, une expertise technique multidisciplinaire et une exigence élevée en matière de qualité. Nous intervenons avec rigueur, professionnalisme et engagement total envers nos clients.
             </p>
@@ -135,13 +135,13 @@ export default function CarrickAbout() {
                 <div key={i} className="text-center">
                   <p
                     className="text-2xl md:text-3xl font-black"
-                    style={{ color: "#68277f", fontFamily: "'Georgia', serif" }}
+                    style={{ color: "#68277f",}}
                   >
                     {s.value}
                   </p>
                   <p
                     className="text-xs mt-1"
-                    style={{ color: "rgba(255,255,255,0.4)", fontFamily: "'Courier New', monospace" }}
+                    style={{ color: "rgba(255,255,255,0.4)", }}
                   >
                     {s.label}
                   </p>
@@ -152,7 +152,7 @@ export default function CarrickAbout() {
             {/* Values grid */}
             <p
               className="text-xs font-bold tracking-widest uppercase mb-5"
-              style={{ color: "rgba(255,255,255,0.3)", fontFamily: "'Courier New', monospace" }}
+              style={{ color: "rgba(255,255,255,0.3)", }}
             >
               Nos Valeurs
             </p>
@@ -169,11 +169,10 @@ export default function CarrickAbout() {
                     transition: `all 0.6s ease ${0.4 + i * 0.1}s`,
                   }}
                 >
-                  <span className="text-2xl flex-shrink-0">{v.icon}</span>
+                  <span className="text-2xl shrink-0">{v.icon}</span>
                   <div>
                     <p
                       className="font-bold text-white mb-1"
-                      style={{ fontFamily: "'Georgia', serif" }}
                     >
                       {v.label}
                     </p>

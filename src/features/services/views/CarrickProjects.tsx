@@ -85,22 +85,22 @@ export default function CarrickProjects() {
               <div className="h-px w-12" style={{ background: "#68277f" }} />
               <span
                 className="text-xs font-bold tracking-[0.3em] uppercase"
-                style={{ color: "#68277f", fontFamily: "'Courier New', monospace" }}
+                style={{ color: "#68277f" }}
               >
                 Ce que nous avons bâti
               </span>
             </div>
             <h2
               className="text-5xl md:text-6xl font-black"
-              style={{ fontFamily: "'Georgia', serif", color: "#111", lineHeight: 1.05 }}
+              style={{ color: "#111", lineHeight: 1.05 }}
             >
               Projets &<br />
               <span style={{ color: "#68277f" }}>Réalisations</span>
             </h2>
           </div>
           <p
-            className="text-base max-w-sm"
-            style={{ color: "#666", fontFamily: "Garamond, Georgia, serif" }}
+            className="text-sm max-w-sm"
+            style={{ color: "#666"}}
           >
             Chaque projet est une preuve concrète de notre engagement envers la qualité, la conformité et la satisfaction client.
           </p>
@@ -155,7 +155,7 @@ export default function CarrickProjects() {
                 {/* Number */}
                 <div
                   className="absolute bottom-4 left-4 font-black text-white opacity-20 select-none"
-                  style={{ fontSize: "64px", lineHeight: 1, fontFamily: "'Georgia', serif" }}
+                  style={{ fontSize: "64px", lineHeight: 1, }}
                 >
                   {p.id}
                 </div>
@@ -165,13 +165,13 @@ export default function CarrickProjects() {
               <div className="p-6" style={{ background: "#fff" }}>
                 <span
                   className="text-xs font-bold tracking-widest uppercase"
-                  style={{ color: p.accent, fontFamily: "'Courier New', monospace" }}
+                  style={{ color: p.accent, }}
                 >
                   {p.category}
                 </span>
                 <h3
                   className="mt-2 text-xl font-black"
-                  style={{ fontFamily: "'Georgia', serif", color: "#111" }}
+                  style={{ color: "#111" }}
                 >
                   {p.title}
                 </h3>
@@ -187,7 +187,6 @@ export default function CarrickProjects() {
                       style={{
                         background: `${p.accent}12`,
                         color: p.accent,
-                        fontFamily: "'Courier New', monospace",
                       }}
                     >
                       {t}
@@ -208,14 +207,8 @@ export default function CarrickProjects() {
           }}
         >
           <button
-            className="px-8 py-4 rounded-2xl font-bold text-sm transition-all duration-200 hover:scale-105"
-            style={{
-              background: "#111",
-              color: "#68277f",
-              border: "1px solid rgba(200,169,110,0.3)",
-              fontFamily: "'Courier New', monospace",
-              letterSpacing: "0.05em",
-            }}
+            className="px-8 py-4 text-secondary border border-secondary rounded-2xl font-bold text-sm transition-all duration-200 hover:scale-105"
+           
           >
             Voir toutes nos réalisations →
           </button>

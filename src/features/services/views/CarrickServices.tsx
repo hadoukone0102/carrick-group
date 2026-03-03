@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useEffect, useState } from "react";
+import Image from "next/image";
 
 const services = [
   {
@@ -123,16 +124,13 @@ export default function CarrickServices() {
             />
             <span
               className="text-xs font-bold text-secondary tracking-[0.3em] uppercase"
-              style={{ 
-                // color: "#68277f", 
-                fontFamily: "'Courier New', monospace" }}
             >
               Ce que nous faisons pour vous
             </span>
           </div>
           <h2
             className="text-5xl md:text-6xl font-black"
-            style={{ fontFamily: "'Georgia', serif", 
+            style={{ 
               color: "#111", 
               lineHeight: 1.05 }}
           >
@@ -141,7 +139,7 @@ export default function CarrickServices() {
               // style={{ color: "#68277f" }}
             >Services</span>
           </h2>
-          <p className="mt-4 text-lg max-w-xl" style={{ color: "#555", fontFamily: "Garamond, Georgia, serif" }}>
+          <p className="mt-4 text-sm max-w-xl" style={{ color: "#555" }}>
             Chaque service est pensé pour répondre à un besoin précis. Dites-nous où vous en êtes, nous vous proposons la solution.
           </p>
         </div>
@@ -162,7 +160,6 @@ export default function CarrickServices() {
               style={{
                 background: activeIdx === i ? sv.accent : "rgba(0,0,0,0.07)",
                 color: activeIdx === i ? "#fff" : "#444",
-                fontFamily: "'Courier New', monospace",
                 border: activeIdx === i ? `1.5px solid ${sv.accent}` : "1.5px solid transparent",
               }}
             >
@@ -190,14 +187,14 @@ export default function CarrickServices() {
             <div>
               <span
                 className="text-xs font-bold tracking-widest uppercase"
-                style={{ color: s.accent, fontFamily: "'Courier New', monospace" }}
+                style={{ color: s.accent, }}
               >
                 {s.number} — {s.subtitle}
               </span>
 
               <h3
                 className="mt-4 text-2xl md:text-3xl font-black"
-                style={{ fontFamily: "'Georgia', serif", color: "#111", lineHeight: 1.25 }}
+                style={{ color: "#111", lineHeight: 1.25 }}
               >
                 {s.title}
               </h3>
@@ -207,7 +204,7 @@ export default function CarrickServices() {
                 className="mt-6 p-5 rounded-2xl"
                 style={{ background: `${s.accent}12`, borderLeft: `4px solid ${s.accent}` }}
               >
-                <p className="text-base leading-relaxed" style={{ color: "#333", fontFamily: "Garamond, Georgia, serif" }}>
+                <p className="text-base leading-relaxed" style={{ color: "#333", }}>
                   {s.answer}
                 </p>
               </div>
@@ -216,7 +213,7 @@ export default function CarrickServices() {
                 {s.points.map((p, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <span
-                      className="mt-1.5 w-2 h-2 rounded-full flex-shrink-0"
+                      className="mt-1.5 w-2 h-2 rounded-full shrink-0"
                       style={{ background: s.accent }}
                     />
                     <span className="text-sm" style={{ color: "#444" }}>
@@ -232,7 +229,6 @@ export default function CarrickServices() {
               style={{
                 background: s.accent,
                 color: "#fff",
-                fontFamily: "'Courier New', monospace",
                 letterSpacing: "0.05em",
               }}
             >
@@ -247,6 +243,8 @@ export default function CarrickServices() {
               alt={s.subtitle}
               className="w-full h-full object-cover"
               style={{ minHeight: "360px" }}
+              // height={10}
+              // width={10}
             />
             <div
               className="absolute inset-0"
@@ -259,7 +257,6 @@ export default function CarrickServices() {
                 fontSize: "100px",
                 lineHeight: 1,
                 color: "rgba(255,255,255,0.15)",
-                fontFamily: "'Georgia', serif",
               }}
             >
               {s.number}

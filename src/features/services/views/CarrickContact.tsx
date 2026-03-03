@@ -71,7 +71,7 @@ export default function CarrickContact() {
               <div className="h-px w-12" style={{ background: "#68277f" }} />
               <span
                 className="text-xs font-bold tracking-[0.3em] uppercase"
-                style={{ color: "#68277f", fontFamily: "'Courier New', monospace" }}
+                style={{ color: "#68277f", }}
               >
                 Passons à l&apos;action
               </span>
@@ -79,7 +79,7 @@ export default function CarrickContact() {
 
             <h2
               className="text-5xl md:text-6xl font-black text-white mb-6"
-              style={{ fontFamily: "'Georgia', serif", lineHeight: 1.05 }}
+              style={{ lineHeight: 1.05 }}
             >
               Vous avez un
               <br />
@@ -88,26 +88,26 @@ export default function CarrickContact() {
 
             <p
               className="text-lg leading-relaxed mb-10"
-              style={{ color: "rgba(255,255,255,0.55)", fontFamily: "Garamond, Georgia, serif" }}
+              style={{ color: "rgba(255,255,255,0.55)", }}
             >
               Notre équipe est à votre écoute. Décrivez votre besoin, choisissez le service concerné et nous reviendrons vers vous avec une étude personnalisée.
             </p>
 
             {/* Contact info */}
             {[
-              { icon: "📍", label: "Adresse", value: "Abidjan, Côte d'Ivoire" },
-              { icon: "📧", label: "Email", value: "contact@carrickgroup.ci" },
-              { icon: "📞", label: "Téléphone", value: "+225 XX XX XX XX XX" },
+              { icon: "📍", label: "Adresse", value: "Riviera Palmeraie , Abidjan, Côte d'Ivoire Cocody" },
+              { icon: "📧", label: "Email", value: "carrickgrouprci@gmail.com" },
+              { icon: "📞", label: "Téléphone", value: "+225 05 76 262 828" },
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-4 mb-5">
                 <div
-                  className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 text-lg"
+                  className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 text-lg"
                   style={{ background: "rgba(200,169,110,0.12)", border: "1px solid rgba(200,169,110,0.25)" }}
                 >
                   {item.icon}
                 </div>
                 <div>
-                  <p className="text-xs" style={{ color: "rgba(255,255,255,0.3)", fontFamily: "'Courier New', monospace" }}>
+                  <p className="text-xs" style={{ color: "rgba(255,255,255,0.3)", }}>
                     {item.label}
                   </p>
                   <p className="text-sm font-semibold text-white">{item.value}</p>
@@ -138,7 +138,6 @@ export default function CarrickContact() {
                 </div>
                 <h3
                   className="text-2xl font-black text-white mb-3"
-                  style={{ fontFamily: "'Georgia', serif" }}
                 >
                   Demande envoyée !
                 </h3>
@@ -150,7 +149,6 @@ export default function CarrickContact() {
               <>
                 <h3
                   className="text-xl font-black text-white mb-8"
-                  style={{ fontFamily: "'Georgia', serif" }}
                 >
                   Demande de devis
                 </h3>
@@ -159,13 +157,13 @@ export default function CarrickContact() {
                   {/* Name + Email */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {[
-                      { name: "name", label: "Nom complet", placeholder: "Jean Kouassi", type: "text" },
-                      { name: "email", label: "Email", placeholder: "jean@example.com", type: "email" },
+                      { name: "name", label: "Nom complet", placeholder: "Elisé Kossonou", type: "text" },
+                      { name: "email", label: "Email", placeholder: "Kossonou@example.com", type: "email" },
                     ].map((f) => (
                       <div key={f.name}>
                         <label
                           className="block text-xs font-bold uppercase tracking-wider mb-2"
-                          style={{ color: "rgba(255,255,255,0.45)", fontFamily: "'Courier New', monospace" }}
+                          style={{ color: "rgba(255,255,255,0.45)", }}
                         >
                           {f.label}
                         </label>
@@ -179,7 +177,6 @@ export default function CarrickContact() {
                           style={{
                             background: "rgba(255,255,255,0.06)",
                             border: "1px solid rgba(255,255,255,0.1)",
-                            fontFamily: "Garamond, Georgia, serif",
                           }}
                           onFocus={(e) => (e.target.style.borderColor = "rgba(200,169,110,0.5)")}
                           onBlur={(e) => (e.target.style.borderColor = "rgba(255,255,255,0.1)")}
@@ -192,7 +189,7 @@ export default function CarrickContact() {
                   <div>
                     <label
                       className="block text-xs font-bold uppercase tracking-wider mb-2"
-                      style={{ color: "rgba(255,255,255,0.45)", fontFamily: "'Courier New', monospace" }}
+                      style={{ color: "rgba(255,255,255,0.45)",}}
                     >
                       Téléphone
                     </label>
@@ -206,7 +203,6 @@ export default function CarrickContact() {
                       style={{
                         background: "rgba(255,255,255,0.06)",
                         border: "1px solid rgba(255,255,255,0.1)",
-                        fontFamily: "Garamond, Georgia, serif",
                       }}
                       onFocus={(e) => (e.target.style.borderColor = "rgba(200,169,110,0.5)")}
                       onBlur={(e) => (e.target.style.borderColor = "rgba(255,255,255,0.1)")}
@@ -217,7 +213,7 @@ export default function CarrickContact() {
                   <div>
                     <label
                       className="block text-xs font-bold uppercase tracking-wider mb-2"
-                      style={{ color: "rgba(255,255,255,0.45)", fontFamily: "'Courier New', monospace" }}
+                      style={{ color: "rgba(255,255,255,0.45)", }}
                     >
                       Service concerné
                     </label>
@@ -229,7 +225,6 @@ export default function CarrickContact() {
                       style={{
                         background: "rgba(255,255,255,0.06)",
                         border: "1px solid rgba(255,255,255,0.1)",
-                        fontFamily: "Garamond, Georgia, serif",
                       }}
                       onFocus={(e) => (e.target.style.borderColor = "rgba(200,169,110,0.5)")}
                       onBlur={(e) => (e.target.style.borderColor = "rgba(255,255,255,0.1)")}
@@ -249,7 +244,7 @@ export default function CarrickContact() {
                   <div>
                     <label
                       className="block text-xs font-bold uppercase tracking-wider mb-2"
-                      style={{ color: "rgba(255,255,255,0.45)", fontFamily: "'Courier New', monospace" }}
+                      style={{ color: "rgba(255,255,255,0.45)" }}
                     >
                       Décrivez votre projet
                     </label>
@@ -263,7 +258,6 @@ export default function CarrickContact() {
                       style={{
                         background: "rgba(255,255,255,0.06)",
                         border: "1px solid rgba(255,255,255,0.1)",
-                        fontFamily: "Garamond, Georgia, serif",
                       }}
                       onFocus={(e) => (e.target.style.borderColor = "rgba(200,169,110,0.5)")}
                       onBlur={(e) => (e.target.style.borderColor = "rgba(255,255,255,0.1)")}
@@ -272,20 +266,15 @@ export default function CarrickContact() {
 
                   <button
                     onClick={handleSubmit}
-                    className="w-full py-4 rounded-xl font-bold text-sm transition-all duration-200 hover:opacity-90 hover:scale-[1.01]"
-                    style={{
-                      background: "linear-gradient(135deg, #68277f, #d4b87e)",
-                      color: "#0a0a0a",
-                      fontFamily: "'Courier New', monospace",
-                      letterSpacing: "0.1em",
-                    }}
+                    className="w-full border border-secondary text-secondary py-4 rounded-xl font-bold text-sm transition-all duration-200 hover:opacity-90 hover:scale-[1.01]"
+                   
                   >
                     ENVOYER MA DEMANDE →
                   </button>
 
                   <p
                     className="text-xs text-center"
-                    style={{ color: "rgba(255,255,255,0.25)", fontFamily: "'Courier New', monospace" }}
+                    style={{ color: "rgba(255,255,255,0.25)" }}
                   >
                     Réponse sous 24h ouvrables · Confidentialité garantie
                   </p>

@@ -38,17 +38,16 @@ export default function Footer() {
               Adresse
             </span>
             <p className="text-sm text-white/60 leading-relaxed">
-              15, rue du Château<br />
-              75001 Paris, France
+              Riviera Palmeraie , Abidjan, Côte d&apos;Ivoire <br /> Cocody, Côte d&apos;Ivoire
             </p>
             <a
               href="mailto:info@monsite.fr"
               className="text-sm text-white/60 hover:text-white transition-colors duration-150"
             >
-              info@monsite.fr
+              carrickgrouprci@gmail.com
             </a>
-            <span className="text-sm text-white/60">Tél : 01 23 45 67 89</span>
-            <span className="text-sm text-white/60">Fax : 01 23 45 67 89</span>
+            <span className="text-sm text-white/60">Tél : 05 76 26 28 28</span>
+            {/* <span className="text-sm text-white/60">Fax : 01 23 45 67 89</span> */}
           </div>
 
           {/* Offres d'emploi */}
@@ -62,7 +61,7 @@ export default function Footer() {
                 href="mailto:info@monsite.fr"
                 className="text-white/80 hover:text-white underline underline-offset-2 transition-colors"
               >
-                info@monsite.fr
+                carrickgrouprci@gmail.com
               </a>
             </p>
             <p className="text-sm text-white/60">
@@ -71,7 +70,7 @@ export default function Footer() {
                 href="tel:0123456789"
                 className="text-white/80 hover:text-white transition-colors"
               >
-                01 23 45 67 89
+                05 76 26 28 28
               </a>
             </p>
           </div>
