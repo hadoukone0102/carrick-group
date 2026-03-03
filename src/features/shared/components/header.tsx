@@ -2,6 +2,7 @@
 import { NAV_ITEMS } from "@/features/contants/head.intdex";
 import { useState, useEffect, useRef } from "react";
 import Image  from "next/image";
+import DevisDrawer from "./DevisDrawer";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -10,6 +11,7 @@ export default function Header() {
   const [activeMobileItem, setActiveMobileItem] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const [devisOpen, setDevisOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -86,7 +88,7 @@ export default function Header() {
 
           {/* CTA */}
           <div className="ck-cta">
-            <a href="#devis" className="ck-cta-btn">
+            <a onClick={() => setDevisOpen(true)} href="#devis" className="ck-cta-btn">
               Demande de devis
             </a>
           </div>
@@ -149,6 +151,7 @@ export default function Header() {
           </div>
         </div>
       </header>
+      <DevisDrawer open={devisOpen} onClose={() => setDevisOpen(false)} />
     </>
   );
 }
