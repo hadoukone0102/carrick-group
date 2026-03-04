@@ -44,7 +44,7 @@ export default function Footer() {
               href="mailto:info@monsite.fr"
               className="text-sm text-white/60 hover:text-white transition-colors duration-150"
             >
-              carrickgrouprci@gmail.com
+              kossastephane@outlook.com;
             </a>
             <span className="text-sm text-white/60">Tél : 05 76 26 28 28</span>
             {/* <span className="text-sm text-white/60">Fax : 01 23 45 67 89</span> */}
@@ -61,7 +61,7 @@ export default function Footer() {
                 href="mailto:info@monsite.fr"
                 className="text-white/80 hover:text-white underline underline-offset-2 transition-colors"
               >
-                carrickgrouprci@gmail.com
+                kossastephane@outlook.com
               </a>
             </p>
             <p className="text-sm text-white/60">

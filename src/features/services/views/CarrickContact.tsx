@@ -98,7 +98,7 @@ export default function CarrickContact() {
             {/* Contact info */}
             {[
               { icon: "📍", label: "Adresse", value: "Riviera Palmeraie , Abidjan, Côte d'Ivoire Cocody" },
-              { icon: "📧", label: "Email", value: "carrickgrouprci@gmail.com" },
+              { icon: "📧", label: "Email", value: "kossastephane@outlook.com" },
               { icon: "📞", label: "Téléphone", value: "+225 05 76 262 828" },
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-4 mb-5">
