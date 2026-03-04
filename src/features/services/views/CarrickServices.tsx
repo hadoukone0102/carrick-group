@@ -119,11 +119,11 @@ export default function CarrickServices() {
           }}
         >
           <div className="flex items-center gap-4 mb-4">
-            <div className="h-px w-12 bg-secondary" 
+            <div className="h-px w-12 bg-black" 
               // style={{ background: "#68277f" }} 
             />
             <span
-              className="text-xs font-bold text-secondary tracking-[0.3em] uppercase"
+              className="text-xs font-bold text-black tracking-[0.3em] uppercase"
             >
               Ce que nous faisons pour vous
             </span>
@@ -135,7 +135,7 @@ export default function CarrickServices() {
               lineHeight: 1.05 }}
           >
             Nos{" "}
-            <span className="text-secondary"
+            <span className="text-black"
               // style={{ color: "#68277f" }}
             >Services</span>
           </h2>
@@ -186,8 +186,8 @@ export default function CarrickServices() {
           >
             <div>
               <span
-                className="text-xs font-bold tracking-widest uppercase"
-                style={{ color: s.accent, }}
+                className="text-xs font-bold tracking-widest uppercase text-black italic"
+                // style={{ color: s.accent, }}
               >
                 {s.number} — {s.subtitle}
               </span>

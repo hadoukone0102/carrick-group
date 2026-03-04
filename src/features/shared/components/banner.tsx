@@ -3,6 +3,7 @@
 import { useEffect, useState, useCallback } from "react";
 import Image from "next/image";
 import { SLIDES } from "@/features/contants/slide.index";
+import DevisDrawer from "./DevisDrawer";
 
 const INTERVAL = 5000;
 
@@ -11,6 +12,7 @@ export default function Banner() {
   const [prev, setPrev] = useState<number | null>(null);
   const [animating, setAnimating] = useState(false);
   const [progress, setProgress] = useState(0);
+  const [devisOpen, setDevisOpen] = useState(false);
 
   const goTo = useCallback(
     (index: number) => {
@@ -48,6 +50,7 @@ export default function Banner() {
   const slide = SLIDES[current];
 
   return (
+    <>
     <section
       className="relative w-full overflow-hidden bg-black"
       style={{ height: "calc(100vh - 4rem)" }}
@@ -96,8 +99,8 @@ export default function Banner() {
           className="flex items-center gap-3 mb-5 opacity-0 translate-y-4"
           style={{ animation: "slideUp 0.6s 0.1s cubic-bezier(0.22,1,0.36,1) forwards" }}
         >
-          <span className="h-px w-8 bg-secondary" />
-          <span className="text-xs font-medium uppercase tracking-[0.2em] text-secondary">
+          <span className="h-px w-8 bg-white" />
+          <span className="text-xs font-medium uppercase tracking-[0.2em] text-white">
             {slide.tag}
           </span>
         </div>
@@ -113,7 +116,7 @@ export default function Banner() {
           }}
         >
           {slide.title}{" "}
-          <span className="text-secondary">{slide.highlight}</span>
+          <span className="text-white">{slide.highlight}</span>
         </h1>
 
         {/* Description */}
@@ -134,6 +137,7 @@ export default function Banner() {
           style={{ animation: "slideUp 0.8s 0.55s cubic-bezier(0.22,1,0.36,1) forwards" }}
         >
           <a
+            id={slide.path}
             href={slide.path}
             className="inline-flex bg-secondary items-center gap-2 px-6 py-3 text-sm font-medium text-white rounded-sm transition-all duration-200 hover:opacity-90 active:scale-95"
           >
@@ -144,6 +148,7 @@ export default function Banner() {
           </a>
           <a
             href="#devis"
+            onClick={() => setDevisOpen(true)}
             className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium text-white rounded-sm border border-white/30 hover:border-white/60 transition-all duration-200 hover:bg-white/10"
           >
             Devis gratuit
@@ -229,5 +234,7 @@ export default function Banner() {
         }
       `}</style>
     </section>
+      <DevisDrawer open={devisOpen} onClose={() => setDevisOpen(false)} />
+    </>
   );
 }

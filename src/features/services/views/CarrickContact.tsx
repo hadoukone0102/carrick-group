@@ -68,10 +68,10 @@ export default function CarrickContact() {
             }}
           >
             <div className="flex items-center gap-4 mb-4">
-              <div className="h-px w-12" style={{ background: "#68277f" }} />
+              <div className="h-px w-12" style={{ background: "white" }} />
               <span
                 className="text-xs font-bold tracking-[0.3em] uppercase"
-                style={{ color: "#68277f", }}
+                // style={{ color: "#68277f", }}
               >
                 Passons à l&apos;action
               </span>
@@ -83,7 +83,9 @@ export default function CarrickContact() {
             >
               Vous avez un
               <br />
-              <span style={{ color: "#68277f" }}>projet ?</span>
+              <span 
+              // style={{ color: "#68277f" }}
+              >projet ?</span>
             </h2>
 
             <p
@@ -266,7 +268,7 @@ export default function CarrickContact() {
 
                   <button
                     onClick={handleSubmit}
-                    className="w-full border border-secondary text-secondary py-4 rounded-xl font-bold text-sm transition-all duration-200 hover:opacity-90 hover:scale-[1.01]"
+                    className="w-full border border-secondary text-white cursor-pointer py-4 rounded-xl font-bold text-sm transition-all duration-200 hover:opacity-90 hover:scale-[1.01]"
                    
                   >
                     ENVOYER MA DEMANDE →

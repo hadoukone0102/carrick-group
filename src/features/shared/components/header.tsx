@@ -145,7 +145,7 @@ export default function Header() {
             </div>
           ))}
           <div className="ck-mobile-cta">
-            <a href="#devis" className="ck-mobile-cta-btn" onClick={() => setMobileOpen(false)}>
+            <a href="#devis" className="ck-mobile-cta-btn" onClick={() => { setMobileOpen(false); setDevisOpen(true); }}>
               Demande de devis
             </a>
           </div>

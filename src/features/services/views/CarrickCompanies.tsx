@@ -107,11 +107,11 @@ export default function CarrickCompanies() {
           }}
         >
           <div className="flex items-center gap-4 mb-4">
-            <div className="h-px flex-1 max-w-12 bg-secondary" 
+            <div className="h-px flex-1 max-w-12 bg-white" 
                 // style={{ background: "#68277f" }} 
             />
             <span
-              className="text-xs text-secondary font-bold tracking-[0.3em] uppercase">
+              className="text-xs text-white font-bold tracking-[0.3em] uppercase">
               Groupe Multisectoriel
             </span>
           </div>
@@ -121,7 +121,7 @@ export default function CarrickCompanies() {
           >
             Nos
             <br />
-            <span  className="text-secondary"
+            <span  className="text-white"
                 // style={{ color: "#68277f" }}
             >Entreprises</span>
           </h2>
@@ -145,18 +145,18 @@ export default function CarrickCompanies() {
               >
                 <span
                   className="text-2xl w-10 h-10 flex items-center justify-center rounded-lg shrink-0"
-                  style={{
-                    background: active === i ? `${c.color}22` : "rgba(255,255,255,0.05)",
-                  }}
+                  // style={{
+                  //   background: active === i ? `${c.color}22` : "rgba(255,255,255,0.05)",
+                  // }}
                 >
                   {c.img ? (<Image src={c.img} width={20} height={20} alt={c.name}  />) :  c.icon}
                 </span>
                 <div>
                   <p
-                    className="font-bold text-sm"
-                    style={{
-                      color: active === i ? c.color : "rgba(255,255,255,0.7)",
-                    }}
+                    className="font-bold text-sm text-white"
+                    // style={{
+                    //   color: active === i ? c.color : "rgba(255,255,255,0.7)",
+                    // }}
                   >
                     {c.name}
                   </p>
@@ -218,7 +218,9 @@ export default function CarrickCompanies() {
                     >
                       {company.name}
                     </h3>
-                    <p className="mt-1 text-sm" style={{ color: company.color,}}>
+                    <p className="mt-1 text-sm text-white/70 italic" 
+                      // style={{ color: company.color,}}
+                    >
                       {company.tagline}
                     </p>
                   </div>
@@ -258,17 +260,18 @@ export default function CarrickCompanies() {
                 </div>
 
                 <div className="mt-8 flex gap-3">
-                  <button
+                  {/* <button
                     className="px-6 py-3 rounded-xl text-secondary cursor-pointer border border-secondary text-sm font-bold transition-all duration-200 hover:scale-105"
                   >
                     En savoir plus →
-                  </button>
+                  </button> */}
                   <button
-                    className="px-6 py-3 rounded-xl text-sm font-bold transition-all duration-200 hover:opacity-80"
+                    className="px-6 py-3 cursor-pointer rounded-xl text-sm font-bold transition-all duration-200 hover:opacity-80"
                     style={{
                       background: "transparent",
                       border: `2px solid ${company.color}66`,
-                      color: company.color,
+                      color: "white",
+                      // color: company.color,
                       letterSpacing: "0.05em",
                     }}
                   >

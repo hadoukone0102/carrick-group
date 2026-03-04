@@ -13,7 +13,7 @@ const partners = [
   { name: "Partenaire Technique A", type: "Technique" },
   { name: "Partenaire Financier B", type: "Financier" },
   { name: "Institution C", type: "Institutionnel" },
-  { name: "Partenaire Technique D", type: "Technique" },
+  // { name: "Partenaire Technique D", type: "Technique" },
   { name: "Fournisseur E", type: "Fournisseur" },
   { name: "Institution F", type: "Institutionnel" },
 ];
@@ -48,10 +48,9 @@ export default function CarrickPartners() {
           }}
         >
           <div className="flex items-center gap-4 mb-4">
-            <div className="h-px w-12" style={{ background: "#68277f" }} />
+            <div className="h-px w-12" style={{ background: "white" }} />
             <span
               className="text-xs font-bold tracking-[0.3em] uppercase"
-              style={{ color: "#68277f", }}
             >
               Notre promesse
             </span>
@@ -60,7 +59,7 @@ export default function CarrickPartners() {
             className="text-5xl md:text-6xl font-black text-white mb-12"
             style={{ lineHeight: 1.05 }}
           >
-            Nos <span style={{ color: "#68277f" }}>Engagements</span>
+            Nos <span >Engagements</span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -82,12 +81,11 @@ export default function CarrickPartners() {
                 >
                   {c.title}
                 </h3>
-                <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.5)" }}>
+                <p className="text-sm leading-relaxed" >
                   {c.desc}
                 </p>
                 <div
                   className="mt-6 h-0.5 w-12 rounded-full"
-                  style={{ background: "#68277f" }}
                 />
               </div>
             ))}
@@ -103,10 +101,9 @@ export default function CarrickPartners() {
           }}
         >
           <div className="flex items-center gap-4 mb-4">
-            <div className="h-px w-12" style={{ background: "#68277f" }} />
+            <div className="h-px w-12" style={{ background: "white" }} />
             <span
               className="text-xs font-bold tracking-[0.3em] uppercase"
-              style={{ color: "#68277f" }}
             >
               Ils nous font confiance
             </span>
@@ -115,7 +112,7 @@ export default function CarrickPartners() {
             className="text-5xl md:text-6xl font-black text-white mb-12"
             style={{ lineHeight: 1.05 }}
           >
-            Nos <span style={{ color: "#68277f" }}>Partenaires</span>
+            Nos <span >Partenaires</span>
           </h2>
 
           <p
@@ -145,7 +142,7 @@ export default function CarrickPartners() {
                   style={{
                     background: "rgba(200,169,110,0.12)",
                     border: "1px solid rgba(200,169,110,0.25)",
-                    color: "#68277f",
+                    // color: "#68277f",
                   }}
                 >
                   {p.name.charAt(0)}

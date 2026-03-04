@@ -82,10 +82,10 @@ export default function CarrickProjects() {
         >
           <div>
             <div className="flex items-center gap-4 mb-4">
-              <div className="h-px w-12" style={{ background: "#68277f" }} />
+              <div className="h-px w-12" style={{ background: "black" }} />
               <span
-                className="text-xs font-bold tracking-[0.3em] uppercase"
-                style={{ color: "#68277f" }}
+                className="text-xs font-bold tracking-[0.3em] uppercase text-black"
+                // style={{ color: "#68277f" }}
               >
                 Ce que nous avons bâti
               </span>
@@ -95,7 +95,7 @@ export default function CarrickProjects() {
               style={{ color: "#111", lineHeight: 1.05 }}
             >
               Projets &<br />
-              <span style={{ color: "#68277f" }}>Réalisations</span>
+              <span className="text-black">Réalisations</span>
             </h2>
           </div>
           <p
@@ -164,8 +164,8 @@ export default function CarrickProjects() {
               {/* Content */}
               <div className="p-6" style={{ background: "#fff" }}>
                 <span
-                  className="text-xs font-bold tracking-widest uppercase"
-                  style={{ color: p.accent, }}
+                  className="text-xs font-bold tracking-widest uppercase text-black"
+                  // style={{ color: p.accent, }}
                 >
                   {p.category}
                 </span>
@@ -183,10 +183,11 @@ export default function CarrickProjects() {
                   {p.tags.map((t) => (
                     <span
                       key={t}
-                      className="px-3 py-1 rounded-full text-xs"
+                      className="px-3 py-1 rounded-full text-xs border border-secondary"
                       style={{
-                        background: `${p.accent}12`,
-                        color: p.accent,
+                        // background: `${p.accent}12`,
+                        // color: p.accent,
+                        color: "black",
                       }}
                     >
                       {t}
@@ -199,7 +200,7 @@ export default function CarrickProjects() {
         </div>
 
         {/* CTA */}
-        <div
+        {/* <div
           className="mt-12 text-center"
           style={{
             opacity: visible ? 1 : 0,
@@ -212,7 +213,7 @@ export default function CarrickProjects() {
           >
             Voir toutes nos réalisations →
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

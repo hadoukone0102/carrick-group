@@ -56,10 +56,10 @@ export default function CarrickAbout() {
             }}
           >
             <div className="flex items-center gap-4 mb-4">
-              <div className="h-px w-12" style={{ background: "#68277f" }} />
+              <div className="h-px w-12" style={{ background: "white" }} />
               <span
                 className="text-xs font-bold tracking-[0.3em] uppercase"
-                style={{ color: "#68277f", }}
+                // style={{ color: "#68277f", }}
               >
                 Qui sommes-nous
               </span>
@@ -71,7 +71,9 @@ export default function CarrickAbout() {
             >
               À Propos de{" "}
               <br />
-              <span style={{ color: "#68277f" }}>CARRICK GROUP</span>
+              <span 
+                // style={{ color: "#68277f" }}
+              >CARRICK GROUP</span>
             </h2>
 
             <p
@@ -109,7 +111,7 @@ export default function CarrickAbout() {
                 >
                   <p
                     className="text-xs font-bold tracking-widest uppercase mb-2"
-                    style={{ color: "#68277f", fontFamily: "'Courier New', monospace" }}
+                    style={{ color: "white" }}
                   >
                     {item.title}
                   </p>
@@ -135,7 +137,7 @@ export default function CarrickAbout() {
                 <div key={i} className="text-center">
                   <p
                     className="text-2xl md:text-3xl font-black"
-                    style={{ color: "#68277f",}}
+                    style={{ color: "white",}}
                   >
                     {s.value}
                   </p>
