@@ -10,12 +10,12 @@ const commitments = [
 
 // Placeholder partner logos (you can replace with real logos)
 const partners = [
-  { name: "Partenaire Technique A", type: "Technique" },
+  // { name: "Partenaire Technique A", type: "Technique" },
   { name: "Partenaire Financier B", type: "Financier" },
   { name: "Institution C", type: "Institutionnel" },
-  // { name: "Partenaire Technique D", type: "Technique" },
+  { name: "Partenaire Technique D", type: "Technique" },
   { name: "Fournisseur E", type: "Fournisseur" },
-  { name: "Institution F", type: "Institutionnel" },
+  // { name: "Institution F", type: "Institutionnel" },
 ];
 
 export default function CarrickPartners() {
@@ -145,7 +145,7 @@ export default function CarrickPartners() {
                     // color: "#68277f",
                   }}
                 >
-                  {p.name.charAt(0)}
+                  {p.type.charAt(0)}
                 </div>
                 <p className="text-xs font-bold text-white/60 leading-tight">
                   {p.type}
