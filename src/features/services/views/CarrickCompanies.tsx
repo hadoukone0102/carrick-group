@@ -11,8 +11,8 @@ const companies = [
     description:
       "Construction de bâtiments résidentiels, commerciaux et institutionnels, rénovation, terrassement et aménagement paysager.",
     services: ["Bâtiments clés en main", "Rénovation & réhabilitation", "Terrassement", "Relevés topographiques"],
-    icon: "🏗️",
-    img:"/carrick/c-construction-img.jpg",
+    // icon: "🏗️",
+    // img:"/A/logo.png",
     color: "#68277f",
     bg: "from-stone-900 to-stone-800",
   },
@@ -23,8 +23,8 @@ const companies = [
     description:
       "Menuiserie aluminium moderne et design : fenêtres, portes, balcons vitrés, stores électriques et escaliers vitrés.",
     services: ["Fenêtres françaises & coulissantes", "Portes coulissantes", "Balcons vitrés inox", "Stores électriques"],
-    icon: "🪟",
-    img:"/carrick/c-alu-img.jpg",
+    // icon: "🪟",
+    // img:"/carrick/c-alu-img.jpg",
     color: "#7EB8D4",
     bg: "from-slate-900 to-slate-800",
   },
@@ -35,7 +35,7 @@ const companies = [
     description:
       "Distribution agroalimentaire et industrielle avec un souci constant de qualité, conformité et logistique maîtrisée.",
     services: ["Distribution agroalimentaire", "Distribution industrielle", "Traçabilité produits", "Approvisionnement régulier"],
-    icon: "🌾",
+    // icon: "🌾",
     color: "#7EC88A",
     bg: "from-emerald-950 to-emerald-900",
   },
@@ -46,7 +46,7 @@ const companies = [
     description:
       "Cabinet de conseil stratégique : montage de projets, investissement, marchés financiers, crowdfunding immobilier & SCPI.",
     services: ["Montage de projets", "Consulting stratégique", "Marchés financiers", "Crowdfunding & SCPI"],
-    icon: "📊",
+    // icon: "📊",
     img:"/carrick/c-conseil-img.jpg",
     color: "#B87ED4",
     bg: "from-purple-950 to-purple-900",
@@ -58,7 +58,7 @@ const companies = [
     description:
       "Accompagnement juridique et administratif : conseil, rédaction de contrats, création d'entreprise, assistance fiscale et sociale.",
     services: ["Conseil juridique", "Rédaction de contrats", "Création d'entreprise", "Recouvrement & assistance sociale"],
-    icon: "⚖️",
+    // icon: "⚖️",
     color: "#D4A27E",
     bg: "from-amber-950 to-amber-900",
   },
@@ -116,11 +116,10 @@ export default function CarrickCompanies() {
             </span>
           </div>
           <h2
-            className="text-5xl md:text-6xl font-black text-white"
+            className="text-5xl md:text-6xl font-black text-white flex gap-2"
             style={{lineHeight: 1.05 }}
           >
             Nos
-            <br />
             <span  className="text-white"
                 // style={{ color: "#68277f" }}
             >Entreprises</span>
@@ -143,14 +142,13 @@ export default function CarrickCompanies() {
                   transition: `all 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${i * 0.08}s`,
                 }}
               >
-                <span
+                {/* <span
                   className="text-2xl w-10 h-10 flex items-center justify-center rounded-lg shrink-0"
                   // style={{
                   //   background: active === i ? `${c.color}22` : "rgba(255,255,255,0.05)",
                   // }}
-                >
-                  {c.img ? (<Image src={c.img} width={20} height={20} alt={c.name}  />) :  c.icon}
-                </span>
+                >  {c.img ? (<Image src={c.img} width={20} height={20} alt={c.name}  />) :  c.icon}
+                </span> */}
                 <div>
                   <p
                     className="font-bold text-sm text-white"
@@ -205,13 +203,13 @@ export default function CarrickCompanies() {
 
               <div className="relative z-10">
                 <div className="flex items-start gap-4 mb-6">
-                  <span
+                  {/* <span
                     className="text-4xl w-16 h-16 flex items-center justify-center rounded-2xl shrink-0"
                     style={{ background: `${company.color}18`, border: `1px solid ${company.color}33` }}
                   >
-                    {company.img ? (<Image src={company.img} width={20} height={20} alt={company.name}  />) :  company.icon}
+                    {company.img ? (<Image src={company.img} width={20} height={20} alt={company.name}  />) :  company.icon} */}
                     {/* {company.icon} */}
-                  </span>
+                  {/* </span> */}
                   <div>
                     <h3
                       className="text-2xl md:text-3xl font-black text-white"
