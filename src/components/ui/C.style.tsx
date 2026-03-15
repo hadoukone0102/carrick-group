@@ -25,7 +25,7 @@ export function CarrickStyle () {
           box-shadow: 0 4px 32px rgba(0,0,0,0.45);
         }
 
-        /* Top accent bar */
+        /* Top accent bar le degrader juste au dessus du top-bar */
         .ck-accent-bar {
           height: 3px;
           background: linear-gradient(90deg, var(--gold) 0%, var(--gold-dark) 50%, transparent 100%);
@@ -36,6 +36,7 @@ export function CarrickStyle () {
           display: flex;
           align-items: stretch;
           background: var(--navy);
+          // background:#ffff;
           min-height: 72px;
         }
 
@@ -45,16 +46,20 @@ export function CarrickStyle () {
           align-items: center;
           gap: 12px;
           padding: 0 28px;
-          background: var(--gold);
+          // background: var(--gold);
+          background:white;
           text-decoration: none;
           flex-shrink: 0;
           position: relative;
           clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 100%, 0 100%);
           min-width: 220px;
-          transition: background 0.2s;
+          transition: all ease-out;
         }
 
-        .ck-logo:hover { background: var(--gold-dark); }
+        .ck-logo:hover { 
+        // background: var(--gold-dark); 
+        border: 2px solid var(--gold-dark);
+        }
 
         .ck-logo-icon {
           width: 40px;
@@ -108,6 +113,7 @@ export function CarrickStyle () {
           padding: 0 16px;
           height: 100%;
           color: var(--white);
+          // color: black;
           text-decoration: none;
           font-size: 12.5px;
           font-weight: 600;
@@ -163,7 +169,8 @@ export function CarrickStyle () {
           align-items: center;
           gap: 8px;
           padding: 10px 22px;
-          background: var(--gold);
+          // background: var(--gold);
+          background:white;
           color: var(--navy);
           border: none;
           font-family: 'Barlow Condensed', sans-serif;
@@ -178,7 +185,8 @@ export function CarrickStyle () {
         }
 
         .ck-cta-btn:hover {
-          background: var(--gold-dark);
+          // background: var(--gold-dark);
+          border: 1px solid var(--gold-dark);
           transform: translateY(-1px);
         }
 

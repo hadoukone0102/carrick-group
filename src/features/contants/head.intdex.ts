@@ -14,7 +14,8 @@ export const NAV_ITEMS = [
     // ],
   },
   {
-    label: "Nos Sociétés",
+    label: "Nos Divisions",
+    // label: "Nos Sociétés",
     href: "#societes",
     // children: [
     //   { label: "Carrick Construction", href: "#construction" },

@@ -13,7 +13,7 @@ export const SLIDES = [
     img: "/A/img2.png",
     tag: "Le Business & La Construction",
     title: "Cabinet de conseil",
-    highlight: "multidisciplinaire",
+    // highlight: "multidisciplinaire",
     description:
       "Accompagnement expert en gestion de projet, ressources humaines et développement de patrimoine pour bâtir votre succès.",
     path: "#services",
@@ -30,7 +30,8 @@ export const SLIDES = [
     cta: "Demander un devis",
   },
   {
-    img: "/A/img4.jpg",
+    // img: "/A/img4.jpg",
+    img: "/A/img5.jpeg",
     tag: "Carrick Construction",
     title: "Construire l'avenir,",
     highlight: "plan par plan",
