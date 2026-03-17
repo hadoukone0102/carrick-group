@@ -10,7 +10,8 @@ export const SLIDES = [
     cta: "Découvrir le groupe",
   },
   {
-    img: "/A/img2.png",
+    // img: "/A/img2.png",
+    img: "/A/img7.jpg",
     tag: "Le Business & La Construction",
     title: "Cabinet de conseil",
     // highlight: "multidisciplinaire",
@@ -20,7 +21,8 @@ export const SLIDES = [
     cta: "Nos services",
   },
   {
-    img: "/A/img3.jpg",
+    img: "/A/img6.jpg",
+    // img: "/A/img3.jpg",
     tag: "Carrick Conseil",
     title: "Votre partenaire",
     highlight: "immobilier & juridique",
