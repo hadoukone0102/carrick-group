@@ -122,36 +122,38 @@ export default function CarrickPartners() {
             Nous collaborons avec des partenaires techniques, financiers et institutionnels reconnus afin de garantir la réussite et la durabilité de chaque projet.
           </p>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {partners.map((p, i) => (
-              <div
-                key={i}
-                className="flex flex-col items-center justify-center p-5 rounded-2xl text-center transition-all duration-200 hover:border-amber-500/30"
-                style={{
-                  background: "rgba(255,255,255,0.03)",
-                  border: "1px solid rgba(255,255,255,0.07)",
-                  minHeight: "100px",
-                  opacity: visible ? 1 : 0,
-                  transform: visible ? "translateY(0)" : "translateY(16px)",
-                  transition: `all 0.5s ease ${0.4 + i * 0.07}s`,
-                }}
-              >
-                {/* Placeholder logo circle */}
+          <div className="">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+              {partners.map((p, i) => (
                 <div
-                  className="w-10 h-10 rounded-full flex items-center justify-center mb-3 font-bold text-sm"
+                  key={i}
+                  className="flex flex-col items-center justify-center p-5 rounded-2xl text-center transition-all duration-200 hover:border-amber-500/30"
                   style={{
-                    background: "rgba(200,169,110,0.12)",
-                    border: "1px solid rgba(200,169,110,0.25)",
-                    // color: "#68277f",
+                    background: "rgba(255,255,255,0.03)",
+                    border: "1px solid rgba(255,255,255,0.07)",
+                    minHeight: "100px",
+                    opacity: visible ? 1 : 0,
+                    transform: visible ? "translateY(0)" : "translateY(16px)",
+                    transition: `all 0.5s ease ${0.4 + i * 0.07}s`,
                   }}
                 >
-                  {p.type.charAt(0)}
+                  {/* Placeholder logo circle */}
+                  <div
+                    className="w-10 h-10 rounded-full flex items-center justify-center mb-3 font-bold text-sm"
+                    style={{
+                      background: "rgba(200,169,110,0.12)",
+                      border: "1px solid rgba(200,169,110,0.25)",
+                      // color: "#68277f",
+                    }}
+                  >
+                    {p.type.charAt(0)}
+                  </div>
+                  <p className="text-xs font-bold text-white/60 leading-tight">
+                    {p.type}
+                  </p>
                 </div>
-                <p className="text-xs font-bold text-white/60 leading-tight">
-                  {p.type}
-                </p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
