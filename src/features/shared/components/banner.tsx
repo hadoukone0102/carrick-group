@@ -2,8 +2,9 @@
 
 import { useEffect, useState, useCallback } from "react";
 import Image from "next/image";
-import { SLIDES } from "@/features/contants/slide.index";
+// import { BANNER } from "@/features/contants/slide.index";
 import DevisDrawer from "./DevisDrawer";
+import { BANNER } from "@/features/contants/banere";
 
 const INTERVAL = 5000;
 
@@ -30,7 +31,7 @@ export default function Banner() {
   );
 
   const next = useCallback(() => {
-    goTo((current + 1) % SLIDES.length);
+    goTo((current + 1) % BANNER.length);
   }, [current, goTo]);
 
   useEffect(() => {
@@ -47,7 +48,7 @@ export default function Banner() {
     return () => clearInterval(tick);
   }, [current]);
 
-  const slide = SLIDES[current];
+  const slide = BANNER[current];
 
   return (
     <>
@@ -56,21 +57,21 @@ export default function Banner() {
       style={{ height: "calc(100vh - 4rem)" }}
     >
       {/* ── Images empilées avec transition opacity ── */}
-      {SLIDES.map((s, i) => {
+      {BANNER.map((s, i) => {
         const isActive = i === current;
         const isLeaving = i === prev;
         return (
           <div
             key={i}
-            className="absolute inset-0 transition-opacity duration-[900ms] ease-in-out"
+            className="absolute inset-0 transition-opacity duration-900 ease-in-out"
             style={{
               opacity: isActive ? 1 : isLeaving ? 0 : 0,
               zIndex: isActive ? 1 : isLeaving ? 1 : 0,
             }}
           >
             <Image
-              src={s.img}
-              alt={s.title}
+              src={s.img as string}
+              alt={s.title as string}
               fill
               priority={i === 0}
               className="object-cover object-center"
@@ -107,7 +108,7 @@ export default function Banner() {
 
         {/* Titre */}
         <h1
-          className="text-white leading-[1.08] mb-3 opacity-0 translate-y-6"
+          className="text-white leading-[1.08] mb-3 opacity-0 translate-y-6 flex flex-col"
           style={{
             fontFamily: "'Playfair Display', serif",
             fontSize: "clamp(2rem, 5vw, 3.8rem)",
@@ -115,8 +116,10 @@ export default function Banner() {
             animation: "slideUp 0.8s 0.2s cubic-bezier(0.22,1,0.36,1) forwards",
           }}
         >
-          {slide.title}{" "}
-          <span className="text-white">{slide.highlight}</span>
+          <span className="">
+            {slide.title}{" "}
+          </span>
+          <span className="text-white text-lg">{slide.highlight}</span>
         </h1>
 
         {/* Description */}
@@ -165,7 +168,7 @@ export default function Banner() {
 
         {/* Barres de progression */}
         <div className="flex gap-2 items-center">
-          {SLIDES.map((_, i) => (
+          {BANNER.map((_, i) => (
             <button
               key={i}
               onClick={() => goTo(i)}
@@ -201,14 +204,14 @@ export default function Banner() {
             {String(current + 1).padStart(2, "0")}
           </span>
           <span className="text-white/30 text-sm font-light">
-            / {String(SLIDES.length).padStart(2, "0")}
+            / {String(BANNER.length).padStart(2, "0")}
           </span>
         </div>
 
         {/* Flèches */}
         <div className="flex gap-2">
           <button
-            onClick={() => goTo((current - 1 + SLIDES.length) % SLIDES.length)}
+            onClick={() => goTo((current - 1 + BANNER.length) % BANNER.length)}
             className="w-9 h-9 border border-white/25 flex items-center justify-center text-white hover:bg-white/15 hover:border-white/50 transition-all duration-200 rounded-sm"
           >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -216,7 +219,7 @@ export default function Banner() {
             </svg>
           </button>
           <button
-            onClick={() => goTo((current + 1) % SLIDES.length)}
+            onClick={() => goTo((current + 1) % BANNER.length)}
             className="w-9 h-9 border border-white/25 flex items-center justify-center text-white hover:bg-white/15 hover:border-white/50 transition-all duration-200 rounded-sm"
           >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
