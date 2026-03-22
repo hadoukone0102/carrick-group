@@ -1,53 +1,8 @@
 "use client";
 
+import { projects } from "@/features/contants/projet";
 import { useRef, useEffect, useState } from "react";
-
-const projects = [
-  {
-    id: "01",
-    title: "Complexe résidentiel — Abidjan",
-    category: "Construction",
-    status: "Livré",
-    desc: "Construction d'un immeuble R+4 de 24 appartements, avec parking souterrain et espace paysager.",
-    // image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80",
-    image: "/realise/001.jpeg",
-    tags: ["Résidentiel", "Clés en main", "Terrassement"],
-    accent: "#68277f",
-  },
-  {
-    id: "02",
-    title: "Façades aluminium — Immeuble commercial",
-    category: "Aluminium",
-    status: "Livré",
-    desc: "Installation de 120 m² de fenêtres coulissantes haute performance thermique sur un immeuble de bureaux.",
-    // image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&q=80",
-    image: "/realise/002.jpeg",
-    tags: ["Fenêtres", "Design", "Performance thermique"],
-    accent: "#7EB8D4",
-  },
-  {
-    id: "03",
-    title: "Structuration d'investissement SCPI",
-    category: "Conseil",
-    status: "En cours",
-    desc: "Accompagnement d'un groupe d'investisseurs dans la structuration d'un portefeuille immobilier via crowdfunding.",
-    // image: "https://images.unsplash.com/photo-1460472178825-e5240623afd5?w=600&q=80",
-    image: "/realise/003.jpeg",
-    tags: ["Investissement", "SCPI", "Crowdfunding"],
-    accent: "#B87ED4",
-  },
-  {
-    id: "04",
-    title: "Réhabilitation d'entrepôt industriel",
-    category: "Construction",
-    status: "Livré",
-    desc: "Rénovation complète d'un entrepôt de 800 m² avec mise aux normes et réorganisation des flux logistiques.",
-    // image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
-    image: "/realise/004.jpeg",
-    tags: ["Réhabilitation", "Industriel", "Normes"],
-    accent: "#7EC88A",
-  },
-];
+import Image from 'next/image';
 
 const statusColors: Record<string, string> = {
   "Livré": "#7EC88A",
@@ -115,7 +70,7 @@ export default function CarrickProjects() {
           {projects.map((p, i) => (
             <div
               key={p.id}
-              className="group rounded-2xl overflow-hidden cursor-pointer"
+              className="group rounded-2xl overflow-hidden cursor-pointer "
               onMouseEnter={() => setHoverId(p.id)}
               onMouseLeave={() => setHoverId(null)}
               style={{
@@ -128,10 +83,11 @@ export default function CarrickProjects() {
               }}
             >
               {/* Image */}
-              <div className="relative overflow-hidden" style={{ height: "240px" }}>
-                <img
-                  src={p.image}
-                  alt={p.title}
+              <div className="relative overflow-hidden h-full" style={{ height: "240px" }}>
+                <Image
+                  src={p.image as string}
+                  alt={p.title as string}
+                  fill
                   className="w-full h-full object-cover transition-transform duration-700"
                   style={{
                     transform: hoverId === p.id ? "scale(1.05)" : "scale(1)",
@@ -166,10 +122,9 @@ export default function CarrickProjects() {
               </div>
 
               {/* Content */}
-              <div className="p-6" style={{ background: "#fff" }}>
+              <div className="p-6 h-full" style={{ background: "#fff" }}>
                 <span
                   className="text-xs font-bold tracking-widest uppercase text-black"
-                  // style={{ color: p.accent, }}
                 >
                   {p.category}
                 </span>
@@ -189,8 +144,6 @@ export default function CarrickProjects() {
                       key={t}
                       className="px-3 py-1 rounded-full text-xs border border-secondary"
                       style={{
-                        // background: `${p.accent}12`,
-                        // color: p.accent,
                         color: "black",
                       }}
                     >
@@ -202,22 +155,6 @@ export default function CarrickProjects() {
             </div>
           ))}
         </div>
-
-        {/* CTA */}
-        {/* <div
-          className="mt-12 text-center"
-          style={{
-            opacity: visible ? 1 : 0,
-            transition: "all 0.8s ease 0.5s",
-          }}
-        >
-          <button
-            className="px-8 py-4 text-secondary border border-secondary rounded-2xl font-bold text-sm transition-all duration-200 hover:scale-105"
-           
-          >
-            Voir toutes nos réalisations →
-          </button>
-        </div> */}
       </div>
     </section>
   );
