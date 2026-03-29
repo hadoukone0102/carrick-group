@@ -17,13 +17,13 @@ export const NAV_ITEMS = [
     label: "Nos Divisions",
     // label: "Nos Sociétés",
     href: "#societes",
-    // children: [
-    //   { label: "Carrick Construction", href: "#construction" },
-    //   { label: "Carrick Conseil", href: "#conseil" },
-    //   { label: "Carrick Alu", href: "#alu" },
-    //   { label: "Carrick Agro Retail", href: "#agro" },
-    //   { label: "Carrick Point d'Accès aux Droits", href: "#droits" },
-    // ],
+    children: [
+      { label: "Carrick Construction", href: "#construction" },
+      { label: "Carrick Conseil", href: "#conseil" },
+      { label: "Carrick Alu", href: "#alu" },
+      { label: "Carrick Agro Retail", href: "#agro" },
+      { label: "Carrick Point d'Accès aux Droits", href: "#droits" },
+    ],
   },
   {
     label: "Nos Services",
