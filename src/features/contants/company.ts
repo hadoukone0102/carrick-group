@@ -33,22 +33,6 @@ export const companies: Company[] = [
     bg: "from-slate-900 to-slate-800",
   },
   {
-    id: "03",
-    name: "Carrick Agro Retail",
-    tagline: "Fiabilité, traçabilité, performance logistique",
-    description:
-      "Distribution agroalimentaire et industrielle avec un souci constant de qualité, conformité et logistique maîtrisée.",
-    services: [
-      "Distribution agroalimentaire",
-      "Distribution industrielle",
-      "Traçabilité produits",
-      "Approvisionnement régulier",
-    ],
-    color: "#7EC88A",
-    bg: "from-emerald-950 to-emerald-900",
-    img: "/A/retail.jpeg",
-  },
-  {
     id: "04",
     name: "Carrick Conseil",
     tagline: "Structurez, sécurisez et optimisez vos projets",
@@ -78,5 +62,21 @@ export const companies: Company[] = [
     color: "#D4A27E",
     bg: "from-amber-950 to-amber-900",
     img: "/A/droit.jpeg",
+  },
+  {
+    id: "03",
+    name: "Agro Rytel",
+    tagline: "Fiabilité, traçabilité, performance logistique",
+    description:
+      "Distribution agroalimentaire et industrielle avec un souci constant de qualité, conformité et logistique maîtrisée.",
+    services: [
+      "Distribution agroalimentaire",
+      "Distribution industrielle",
+      "Traçabilité produits",
+      "Approvisionnement régulier",
+    ],
+    color: "#7EC88A",
+    bg: "from-emerald-950 to-emerald-900",
+    img: "/A/retail.jpeg",
   },
 ];

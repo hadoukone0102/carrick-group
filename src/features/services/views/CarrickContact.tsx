@@ -100,6 +100,7 @@ export default function CarrickContact() {
               { icon: "📍", label: "Adresse", value: "Riviera Palmeraie , Abidjan, Côte d'Ivoire Cocody" },
               { icon: "📧", label: "Email", value: "carrickgrouprci@gmail.com" },
               { icon: "📞", label: "Téléphone", value: "+225 05 76 262 828" },
+              { icon: "📘", label: "Facebook", value: "Carrick Group", href: "https://www.facebook.com/carrickgroup" },
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-4 mb-5">
                 <div
@@ -112,7 +113,20 @@ export default function CarrickContact() {
                   <p className="text-xs" style={{ color: "rgba(255,255,255,0.3)", }}>
                     {item.label}
                   </p>
-                  <p className="text-sm font-semibold text-white">{item.value}</p>
+                  {item.href ? (
+                    <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-semibold"
+                    style={{ color: "#4A90D9" }}
+                  >
+                    {item.value}
+                  </a>
+                    ) : (
+                      <p className="text-sm font-semibold text-white">{item.value}</p>
+                    )}
+                  {/* <p className="text-sm font-semibold text-white">{item.value}</p> */}
                 </div>
               </div>
             ))}

@@ -62,7 +62,7 @@ export default function CarrickCompanies() {
             className="text-5xl md:text-6xl font-black text-white flex gap-2"
             style={{ lineHeight: 1.05 }}
           >
-            Nos <span className="text-white">Entreprises</span>
+            Nos <span className="text-white">Divisions</span>
           </h2>
         </div>
 

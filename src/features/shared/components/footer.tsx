@@ -1,4 +1,4 @@
-import { NAV_ITEMS } from "@/features/contants/head.intdex";
+import { FOOTER_NAV_ITEMS } from "@/features/contants/head.intdex";
 import Image from "next/image";
 
 export default function Footer() {
@@ -76,14 +76,20 @@ export default function Footer() {
           </div>
 
           {/* Réseaux sociaux */}
-          <div className="flex gap-3">
-            {["X", "in", "fb"].map((s) => (
+         <div className="flex gap-3">
+            {[
+              { label: "X", href: "#" },
+              { label: "in", href: "#" },
+              { label: "fb", href: "https://www.facebook.com/carrickgroup" },
+            ].map((s) => (
               <a
-                key={s}
-                href="#"
+                key={s.label}
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-xs text-white/40 hover:border-white/60 hover:text-white transition-all duration-200"
               >
-                {s}
+                {s.label}
               </a>
             ))}
           </div>
@@ -91,7 +97,7 @@ export default function Footer() {
 
         {/* Colonnes nav — générées depuis NAV_ITEMS (seulement ceux avec enfants) */}
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 lg:gap-10 flex-1 lg:max-w-2xl">
-          {NAV_ITEMS.filter((item) => item.children && item.children.length > 0).map((item) => (
+          {FOOTER_NAV_ITEMS.filter((item) => item.children && item.children.length > 0).map((item) => (
             <div key={item.label} className="flex flex-col gap-2">
               <span className="text-xs font-semibold uppercase tracking-widest text-white mb-1">
                 {item.label}
